@@ -16,3 +16,6 @@ eureka:
     service-url:
       # 注册中心地址
       defaultZone: http://admin:Haier2020@localhost:8000/eureka
+
+service:
+  name: server-eureka-prod
