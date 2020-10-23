@@ -1,0 +1,20 @@
+# 服务端口
+server.port=100
+# 这个是指定服务名称
+spring.application.name=config-service
+
+#注册中心地址
+eureka.client.serviceUrl.defaultZone=http://localhost:7001/eureka/
+
+#本地配置文件，默认获取在resources路径下的文件
+spring.profiles.active=native
+
+
+#配置的Git仓库的地址
+#spring.cloud.config.server.git.uri=https://github.com/xuwujing/springcloud-study/
+#git仓库地址下的相对地址 多个用逗号","分割。
+#spring.cloud.config.server.git.search-paths = /springcloud-config/config-repo
+#git仓库的账户
+#spring.cloud.config.server.git.username =
+#git仓库的密码
+#spring.cloud.config.server.git.password =
