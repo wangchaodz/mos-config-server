@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: server-eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
 
 eureka:
   instance:
