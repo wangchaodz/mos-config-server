@@ -20,4 +20,4 @@ eureka:
 service:
   name: server-eureka-local
   profile: local
-  version: 1.0_SNAPSHOT
+  version: 1.1_SNAPSHOT
