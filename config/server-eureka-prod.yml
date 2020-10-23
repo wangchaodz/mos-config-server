@@ -19,3 +19,5 @@ eureka:
 
 service:
   name: server-eureka-prod
+  profile: prod
+  version: 1.0_RELEASE
