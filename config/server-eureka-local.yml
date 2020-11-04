@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: server-eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
 
 eureka:
   instance:
@@ -20,4 +25,4 @@ eureka:
 service:
   name: server-eureka-local
   profile: local
-  version: 1.0_SNAPSHOT
+  version: 1.1_SNAPSHOT
