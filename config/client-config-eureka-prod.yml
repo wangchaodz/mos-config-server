@@ -21,3 +21,8 @@ service:
   name: server-eureka-prod
   profile: prod
   version: 1.0_RELEASE
+
+# rocketmq 配置项，对应 RocketMQProperties 配置类
+rocketmq:
+  # RocketMQ Namesrv
+  name-server: 127.0.0.1:9876

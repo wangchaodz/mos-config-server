@@ -26,3 +26,8 @@ service:
   name: server-eureka-local
   profile: local
   version: 1.1_SNAPSHOT
+
+# rocketmq 配置项，对应 RocketMQProperties 配置类
+rocketmq:
+  # RocketMQ Namesrv
+  name-server: 127.0.0.1:9876
