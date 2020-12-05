@@ -3,6 +3,26 @@ server:
 spring:
   application:
     name: server-eureka
+  cloud:
+    # Bus 相关配置项，对应 BusProperties
+    bus:
+      # 是否开启，默认为 true
+      enabled: true
+      # 目标消息队列，默认为 springCloudBus
+      destination: springCloudBus
+    
+    # rocketmq 配置项，对应 RocketMQProperties 配置类
+    stream:
+      rocketmq:
+        binder:
+          # RocketMQ Namesrv
+          name-server: 127.0.0.1:9876
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 eureka:
   instance:
