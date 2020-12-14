@@ -39,5 +39,5 @@ eureka:
 
 service:
   name: server-eureka-local
-  profile: local
+  profile: local11
   version: 1.0_RELEASE
