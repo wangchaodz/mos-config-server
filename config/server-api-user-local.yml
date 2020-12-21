@@ -1,8 +1,8 @@
 server:
-  port: 8002
+  port: 8004
 spring:
   application:
-    name: server-eureka
+    name: server-api-user
   cloud:
     # Bus 相关配置项，对应 BusProperties
     bus:
@@ -20,7 +20,7 @@ spring:
 
   #zipkin-server地址
   zipkin:
-    base-url: http://localhost:10000/
+    base-url: http://localhost:9411/
   #接口默认全部采样
   sleuth:
     sampler:
@@ -44,8 +44,3 @@ eureka:
     service-url:
       # 注册中心地址
       defaultZone: http://admin:Haier2020@localhost:8000/eureka
-
-service:
-  name: server-eureka-local
-  profile: local11
-  version: 1.0_RELEASE
