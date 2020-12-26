@@ -2,7 +2,7 @@ server:
   port: 18002
 spring:
   application:
-    name: server-eureka
+    name: client-config-eureka
   cloud:
     # Bus 相关配置项，对应 BusProperties
     bus:
